@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="blur_container">
+        <!-- Location and Date -->
+        <div class="location_date one">
+          <span class="location"></span>
+          <span class="date"></span>
+        </div>
+        <!-- Icon and Description -->
+        <div class="middleContainer">
+          <div class="weatherIcon two">
+            <span class="weatherDescription"></span>
+          </div>
+          <!-- Current Temp -->
+          <div class="currentTemp three">
+            <span class="mainTemp"></span>
+            <span class="line">_______________________</span>
+          </div>
+          <!-- Air Pollution Status -->
+          <div class="airPollution four">
+            <div class="pm2_5container">
+              <span class="title"></span>
+              <span class="status"></span>
+              <span class="measure"></span>
+            </div>
+            <div class="pm10container">
+              <span class="title"></span>
+              <span class="status"></span>
+              <span class="measure"></span>
+            </div>
+          </div>
+        </div>
+        <!-- humidity and SunTime -->
+        <div class="humidity&SunTime five">
+          <div class="humidity"></div>
+          <div class="sunTime">
+            <span class="sunriseTime"></span>
+            <span class="sunsetTime"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/Weather/JavaScript/weather.js"></script>
+    <script src="/Weather/JavaScript/airCondition.js"></script>
+    <script src="/Weather/JavaScript/date&time.js"></script>
+    <script src="/Weather/JavaScript/icon&bg.js"></script>
+  </body>
+</html>
