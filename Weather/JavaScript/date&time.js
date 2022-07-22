@@ -7,9 +7,11 @@ function getDate() {
   const day = date.getDate();
   const year = date.getFullYear();
   let fullDate = `${year}.${month}.${day}`;
+
   dateEl.textContent = fullDate;
 }
 
+// 일출, 일몰
 function get_sunrise_sunsetTime(sunset, sunrise) {
   const sunRiseEl = document.querySelector(".sunrise");
   const sunSetEl = document.querySelector(".sunset");

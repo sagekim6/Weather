@@ -8,7 +8,8 @@
   </head>
   <body>
     <div class="Blur_box_container">
-      <main id="Blur_box">
+      <main class="Blur_box">
+        <!-- Main Weather -->
         <section class="Weather_container">
           <div>
             <div class="location"></div>
@@ -20,6 +21,7 @@
           </div>
           <div class="currentTemp"></div>
         </section>
+        <!-- Air Condition -->
         <section class="Air_container">
           <div class="Ultrafine_dust">
             <span class="title">Ultrafine Dust</span>
@@ -32,11 +34,21 @@
             <span class="pm10"></span>
           </div>
         </section>
+        <!-- sunTime and Humidity -->
         <section class="Suntime_humid_container">
-          <div class="humidity"></div>
+          <div>
+            <span>Humidity</span>
+            <span class="humidity"></span>
+          </div>
           <div class="sunTime">
-            <span class="sunrise"></span>
-            <span class="sunset"></span>
+            <div class="sunrise_container">
+              <span>Sunrise</span>
+              <span class="sunrise"></span>
+            </div>
+            <div class="sunset_container">
+              <span>Sunset</span>
+              <span class="sunset"></span>
+            </div>
           </div>
         </section>
       </main>
