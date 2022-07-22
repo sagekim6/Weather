@@ -3,59 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div id="blur_container">
-        <!-- Location and Date -->
-        <div class="location_date one">
-          <span class="location"></span>
-          <span class="date"></span>
-        </div>
-        <!-- Icon and Description -->
-        <div class="middleContainer">
-          <div class="weatherIcon two">
-            <span class="weatherDescription"></span>
+    <div class="Blur_box_container">
+      <main id="Blur_box">
+        <section class="Weather_container">
+          <div>
+            <div class="location"></div>
+            <div class="date"></div>
           </div>
-          <!-- Current Temp -->
-          <div class="currentTemp three">
-            <span class="mainTemp"></span>
-            <span class="line">_______________________</span>
+          <div>
+            <div class="icon"></div>
+            <div class="description"></div>
           </div>
-          <!-- Air Pollution Status -->
-          <div class="airPollution four">
-            <div class="pm2_5container">
-              <span class="title"></span>
-              <span class="status"></span>
-              <span class="measure"></span>
-            </div>
-            <div class="pm10container">
-              <span class="title"></span>
-              <span class="status"></span>
-              <span class="measure"></span>
-            </div>
+          <div class="currentTemp"></div>
+        </section>
+        <section class="Air_container">
+          <div class="Ultrafine_dust">
+            <span class="title">Ultrafine Dust</span>
+            <span class="status2_5"></span>
+            <span class="pm2_5"></span>
           </div>
-        </div>
-        <!-- humidity and SunTime -->
-        <div class="humidity&SunTime five">
+          <div class="Fine_dust">
+            <span class="title">Fine Dust</span>
+            <span class="status10"></span>
+            <span class="pm10"></span>
+          </div>
+        </section>
+        <section class="Suntime_humid_container">
           <div class="humidity"></div>
           <div class="sunTime">
-            <span class="sunriseTime"></span>
-            <span class="sunsetTime"></span>
+            <span class="sunrise"></span>
+            <span class="sunset"></span>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
+    <!-- Scripts -->
     <script type="module" src="/Weather/JavaScript/weather.js"></script>
     <script src="/Weather/JavaScript/airCondition.js"></script>
     <script src="/Weather/JavaScript/date&time.js"></script>
