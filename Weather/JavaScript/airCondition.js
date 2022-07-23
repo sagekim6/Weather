@@ -13,8 +13,8 @@ function showAirCondition(lat, lon, API_KEY) {
       const pm2_5 = data.list[0].components.pm2_5; // 초미세먼지
       const pm10 = data.list[0].components.pm10; // 미세먼지
 
-      fineDustPM.textContent = pm10;
-      ultrafineDustPM.textContent = pm2_5;
+      fineDustPM.textContent = `${pm10} μg/m3`;
+      ultrafineDustPM.textContent = `${pm2_5} μg/m3`;
 
       if (0 <= pm10 < 25) {
         status10.textContent = "Good";

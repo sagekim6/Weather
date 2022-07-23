@@ -3,7 +3,6 @@
 html, body {
   margin: 0;
   height: 100vh;
-  font-family: "IBM Plex Sans KR", sans-serif;
   font-family: "Montserrat", sans-serif;
   color: #efebe9;
 }
@@ -36,24 +35,66 @@ html, body {
   box-shadow: 2px 2px 10px rgb(59, 59, 59);
 }
 
+/* Weather Container */
+.Weather_container .currentTemp{
+  font-weight: bold;
+}
+
+.Weather_container > div {
+  text-align: center;
+}
+
+.Weather_container .description{
+  text-align: center;
+}
+
+/* Air Container */
+.Air_container{
+  display: flex;
+}
+
+.Air_container .Ultrafine_dust, .Fine_dust{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Air_container .dustTitle{
+  font-weight: bold;
+}
+
+.Air_container .status2_5, .status10{
+  font-style: italic;
+}
+
+/* SunTime and Humidity */
+.Suntime_humid_container > div .humidTitle, .sunTitle{
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/* Moblie */
 @media (max-width: 375px){
   .Blur_box{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-evenly;
     align-items: center;
   }
 
+  /* Weather Container */
   .Weather_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-grow: 2;
   }
 
-  .Weather_container .description{
-    text-align: center;
+  .Weather_container .locate_and_date{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .Weather_container .locate_and_date .location{
+    font-size: 30px;
+    padding-bottom: 10px;
   }
 
   .Weather_container .icon{
@@ -62,6 +103,52 @@ html, body {
   }
 
   .Weather_container .icon img{
-    width: 50%;
+    width: 60%;
   }
+
+  .Weather_container .description{
+    padding-top: 2px;
+  }
+
+  .Weather_container .currentTemp{
+    font-size: 3rem;
+    /* padding-top: 10px; */
+  }
+
+  /* Air Container */
+  .Air_container{
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+  }
+
+  .Air_container .Ultrafine_dust, .Fine_dust{
+    justify-content: space-evenly;
+  }
+
+  .Air_container .status2_5, .status10{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  /* Suntime Humidity Container */
+  .Suntime_humid_container{
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .Suntime_humid_container .humidity_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Suntime_humid_container .sunrise_container{
+    margin-bottom: 3px;
+  }
+
 }
+
+/* Tablet */
