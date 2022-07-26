@@ -213,5 +213,16 @@ html, body {
 }
 
 /* Large Device */
-@media (min-width: 1025px){
+@media (min-width: 992px){
+  .Weather_container .icon img{
+    max-width: 18%;
+  }
+
+  .Air_container{
+    font-size: 1.8vw;
+  }
+
+  .Suntime_humid_container{
+    font-size: 1.8vw;
+  }
 }
